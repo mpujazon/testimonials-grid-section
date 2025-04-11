@@ -32,3 +32,128 @@ body{
     padding: 0;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
+.container{
+    background-color: #F6F5F6;
+    padding: 73px 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--spacing-400);
+}
+
+.card{
+    width: 80%;
+    margin: 0 auto;
+    padding: var(--spacing-400);
+    background-color: var(--grey-400);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, .2474);
+}
+
+.card .user{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-200);
+}
+
+.card .user__avatar{
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--purple-300);
+}
+
+.card span, .card p{
+    margin: 0;
+}
+
+.card .user__name{
+    font-size: .8125rem;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.card .user__role{
+    font-size: .6875rem;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.card .featured-quote{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.card .quote{
+    font-size: .8125rem;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.c1{
+    background-color: var(--purple-500);
+    color: var(--white);
+}
+
+.c1 .user__role, .c1 .quote{
+    color: var(--purple-50);
+}
+
+.c2{
+    background-color: var(--grey-500);
+    color: var(--white);
+}
+
+.c2 .user__role{
+    color: var(--grey-300);
+}
+
+.c2 .quote{
+    color: var(--grey-100);
+}
+
+.c3{
+    background-color: var(--white);
+    color: var(--grey-500);
+}
+
+.c3 .user__role, .c3 .quote{
+    color: var(--grey-400);
+}
+
+.c4{
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.c4 .featured-quote{
+    color: var(--grey-200);
+}
+.c4 .quote{
+    color: var(--grey-100);
+}
+
+.c5{
+    background-color: var(--white);
+    color: var(--grey-500);
+}
+
+.c5 .user__role{
+    color: var(--grey-300);
+}
+
+.c5 .quote{
+    color: var(--grey-400);
+}
+
+footer{
+    display: none;
+}
