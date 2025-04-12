@@ -46,7 +46,7 @@ body{
 }
 
 .card{
-    width: 80%;
+    width: 81.33%;
     margin: 0 auto;
     padding: var(--spacing-400);
     background-color: var(--grey-400);
